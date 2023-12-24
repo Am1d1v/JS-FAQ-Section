@@ -53,11 +53,16 @@ h1 {
 }
 .faq.active .fa-times {
   display: block;
+  color: #fff;
 }
 .faq.active .fa-chevron-down {
   display: none;
 }
+.faq.active .faq-toggle {
+  background-color: #666;
+}
 .faq-container {
+  width: 600px;
   max-width: 600px;
 }
 .faq-title {
@@ -70,11 +75,12 @@ h1 {
 .faq-toggle {
   background-color: transparent;
   border: 0;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 16px;
   position: absolute;
   top: 10px;
   right: 30px;

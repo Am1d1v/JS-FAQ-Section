@@ -27,5 +27,28 @@ h1
     transition: 0.5s ease
     &.active
         background-color: #fff
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1)
+        &::before, &::after 
+            content: '\f075'
+            font-family: 'Font Awesome 5 Free'
+            color: #444
+            opacity: 0.2
+            font-size: 100px
+            position: absolute
+            top: 20px
+            left: 20px
+            z-index: 0
+        &::before
+            color: #555
+            top: -10px
+            left: 120px
+            transform: rotateY(180deg)
+        & .faq-text   
+            display: block
     &-container    
         max-width: 600px
+    &-title    
+        margin: 0 35px 0 0
+    &-text    
+        display: none
+        margin: 30px 0 0
